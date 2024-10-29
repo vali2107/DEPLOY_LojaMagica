@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <script src="https://kit.fontawesome.com/afdb87810b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="catalogo.html"><img src="assets/logo.png" alt="logo"></a>
+        <div class="navBar">
+            <a href="favoritos.html">Favoritos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="perfil.html">Perfil</a>
+        </div>
+    </header>
+    <main>
+        <div id="inserirProduto" style="display: none">
+            <input type="text" id="nome_produto" placeholder="Nome">
+            <input type="text" id="descricao_produto" placeholder="Descrição">
+            <input type="text" id="valor_produto" placeholder="Valor">
+            <input type="file" id="file">
+            <button onclick="inserirProduto(event)">Inserir</button>
+        </div>
+        <div id="editarProduto" style="display: none;">
+            <input type="text" id="nome_produto_editar" placeholder="Nome">
+            <input type="text" id="descricao_produto_editar" placeholder="Descrição">
+            <input type="text" id="valor_produto_editar" placeholder="Valor">
+            <input type="file" id="file_editar">
+            <button onclick="" id="botao_editar">Editar</button>
+            <button onclick="" id="botao_deletar">Deletar</button>
+        </div>
+        <div id="catalogo">
+        </div>
+    </main>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
